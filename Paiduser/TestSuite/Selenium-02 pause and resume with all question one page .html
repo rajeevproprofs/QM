@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.proprofs.com/quiz-school/story.php?title=example-quiz-1-different-question-types" />
+<title>Pause And Resume All Question One Page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Pause And Resume All Question One Page</td></tr>
+</thead><tbody>
+<!--Delete old records-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/report.php?title=automation-scenario-case-3&amp;show=score-reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chk0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=delete_confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<!--Take page-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=automation-scenario-case-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>class=btn_class btn-big primary</td>
+	<td>Start</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lbl72671399</td>
+	<td>A.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lbl72671403</td>
+	<td>A.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fillin21615837</td>
+	<td>fill</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submitQuestion_pause_temp</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=save_progres</td>
+	<td>Save Progress&amp; Exit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>class=btn_class btn-big primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Resume Quiz</td>
+	<td>Resume Quiz</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lbl72671407</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=essay21615838</td>
+	<td>Essay type question</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=select_match_72671410</td>
+	<td>label=a</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitmyanswer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.m_rs_main_right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='quizreport_area']/div[7]/div[2]/div/div[2]</td>
+	<td>34 / 100&nbsp;&nbsp;&nbsp;Points ( 33% )</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Result »&nbsp;&nbsp;&nbsp;&nbsp;Grade F</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.m_rs_main_even &gt; div.m_rs_main_right &gt; div.m_right_rs</td>
+	<td>2 Questions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='quizreport_area']/div[7]/div[5]/div/div[2]</td>
+	<td>3 Questions</td>
+</tr>
+<!--Q1.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.icon_question_incorrect_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Answer)</td>
+</tr>
+<!--Q2.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21615835 &gt; strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descbox_21615835 &gt; div.m_top &gt; div.m_quiz_talb_div &gt; div.m_pdoption &gt; span.labelNormal &gt; span.icon_question_incorrect_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descbox_21615835 &gt; div.m_top &gt; div.m_quiz_talb_div &gt; div.m_pdoption &gt; span.labelNormal &gt; span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Answer)</td>
+</tr>
+<!--Q3.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.icon_question_correct_answer</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descbox_21615836 &gt; div.m_top &gt; div.m_quiz_talb_div &gt; div.m_pdoption &gt; span.labelNormal &gt; span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<!--Q4.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21615837 &gt; strong.icon_question_correct_answer</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.labelNormal &gt; span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<!--Q5.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=blockquote</td>
+	<td>Essay type question</td>
+</tr>
+<!--Q6.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21615839 &gt; strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.greenun &gt; b</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.redun &gt; b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=i</td>
+	<td>Unanswered</td>
+</tr>
+<!--Author report-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/report.php?title=automation-scenario-case-3&amp;show=score-reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;User Score Report&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.right_rs &gt; span &gt; span</td>
+	<td>Grade F</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_even &gt; div.rs_main_right &gt; div.right_rs</td>
+	<td>2&nbsp;&nbsp;Questions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='left_wrapper_quiz']/div[14]/div[6]/div/div[2]</td>
+	<td>3&nbsp;&nbsp;Questions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_even &gt; div.rs_main_left &gt; div.right_rs</td>
+	<td>34 out of 100 ( 33% )</td>
+</tr>
+<!--Q1.-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615834']/div/table/tbody/tr/td/span/strong</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.smallContent</td>
+	<td>(your answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(correct answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615834']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 16.67</td>
+</tr>
+<!--Q2.-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615835']/div/table/tbody/tr/td/span/strong</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615835']/div/table[2]/tbody/tr[2]/td[3]/span/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615835']/div/table[2]/tbody/tr[3]/td[3]/span/span/span</td>
+	<td>(missed)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615835']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 16.67</td>
+</tr>
+<!--Q3.-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615836']/div/table/tbody/tr/td/span/strong</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615836']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>16.67 / 16.67</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615836']/div/table[2]/tbody/tr[2]/td[3]/span/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<!--Q4.-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#storyDescbox21615837 &gt; div.top &gt; table.quzesionbg &gt; tbody &gt; tr &gt; td.quiz_title_link &gt; span &gt; strong.icon_question_correct_answer</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615837']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>16.67 / 16.67</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615836']/div/table[2]/tbody/tr[2]/td[3]/span/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<!--Q5.-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615838']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 16.67</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=blockquote.m_answertxt</td>
+	<td>Essay type question</td>
+</tr>
+<!--Q6.-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615839']/div/table/tbody/tr/td/span/strong</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.greenun &gt; b</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.redun &gt; b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615839']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 16.67</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=i</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21615839']/div/table[2]/tbody/tr[3]/td[5]</td>
+	<td>a</td>
+</tr>
+</tbody></table>
+</body>
+</html>
