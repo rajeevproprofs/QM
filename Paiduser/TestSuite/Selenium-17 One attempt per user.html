@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.proprofs.com/" />
+<title>Selenium-17 One attempt per user</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Selenium-17 One attempt per user</td></tr>
+</thead><tbody>
+<!--Scenario A1 all data same-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=NjkxMDI4H6QM</td>
+	<td>a1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario A2 name and id change but email id same-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=NjkxMDI4H6QM</td>
+	<td>a2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>4321</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario A3 all data change except id-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=NjkxMDI4H6QM</td>
+	<td>a3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario A4 all data change except name-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=NjkxMDI4H6QM</td>
+	<td>a4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@id='lbl82412525']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@id='lbl82412529']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@id='lbl82412533']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario B1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI3HPNK</td>
+	<td>b1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario B2 Id same but name change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI3HPNK</td>
+	<td>b2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario B3 name same and id change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI3HPNK</td>
+	<td>b3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario C1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=Njc0NzMy3R54</td>
+	<td>c1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario C2 name change but email id same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=Njc0NzMy3R54</td>
+	<td>c1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario C3 email id change but name same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=Njc0NzMy3R54</td>
+	<td>c1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario D1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDMyDK0N</td>
+	<td>d1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario D2 Name change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDMyDK0N</td>
+	<td>d2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario E1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDM1B39U</td>
+	<td>e1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario E2 Id change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDM1B39U</td>
+	<td>e2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario F1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDM3OSB6</td>
+	<td>f1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario F2 Email id change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDM3OSB6</td>
+	<td>f2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+<!--Scenario G1 all data same-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI54D7H</td>
+	<td>g1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario G2 id same email id change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI54D7H</td>
+	<td>g2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario G3 email id same id change-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI54D7H</td>
+	<td>g3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=errorInfo</td>
+	<td>You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz.</td>
+</tr>
+<!--Scenario G4-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/story.php?title=NjkxMDI54D7H</td>
+	<td>g4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_id</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev1@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.QuestionN</td>
+	<td>Q.1)</td>
+</tr>
+</tbody></table>
+</body>
+</html>

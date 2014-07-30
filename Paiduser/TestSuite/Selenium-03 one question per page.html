@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.proprofs.com/quiz-school/story.php?title=example-quiz-1-different-question-types" />
+<title>one question per page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">one question per page</td></tr>
+</thead><tbody>
+<!--Delete old records-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/report.php?title=automation-scenario-case-1&amp;show=score-reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chk0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=delete_confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<!--Take page-->
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=automation-scenario-case-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=required_email</td>
+	<td>rajeev@proprofs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>class=btn_class btn-big primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ins.iCheck-helper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lbl72975141</td>
+	<td>A. <br />&nbsp;&nbsp;&nbsp;Answer option1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lbl72975145</td>
+	<td>True</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fillin</td>
+	<td>ww</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=←&nbsp;&nbsp;Back</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Skip Question&nbsp;&nbsp;&nbsp;→</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=←&nbsp;&nbsp;Back</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fillin</td>
+	<td>Filling</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span &gt; div &gt; div &gt; div &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span &gt; div &gt; div &gt; div &gt; div</td>
+	<td>30-39</td>
+</tr>
+<!--Verification user Report-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.m_rs_main_right &gt; div.m_right_rs</td>
+	<td>10 / 30&nbsp;&nbsp;&nbsp;Points ( 33% )</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.m_rs_main_even &gt; div.m_rs_main_right &gt; div.m_right_rs</td>
+	<td>2 Questions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='quizreport_area']/div[8]/div[5]/div/div[2]</td>
+	<td>2 Questions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span &gt; div &gt; div &gt; div &gt; div &gt; div &gt; div</td>
+	<td>30-39</td>
+</tr>
+<!--Q.1-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.icon_question_correct_answer</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<!--Q.2-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descbox_21705065 &gt; div.m_top &gt; div.m_quiz_talb_div &gt; div.m_pdoption &gt; span.labelNormal &gt; span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='descbox_21705065']/div/div[9]/div[3]/span/span/span</td>
+	<td>(Missed)</td>
+</tr>
+<!--Q.3-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21705066 &gt; strong.icon_question_correct_answer</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#descbox_21705066 &gt; div.m_top &gt; div.m_quiz_talb_div &gt; div.m_pdoption &gt; span.labelNormal &gt; span.icon_question_correct_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<!--Q.4-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21705068 &gt; strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.icon_question_incorrect_answer &gt; span.smallContent</td>
+	<td>(Your Answer)</td>
+</tr>
+<!--Q.5-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div &gt; strong.icon_question_incorrect_answer</td>
+	<td>Unanswered [Essay]</td>
+</tr>
+<!--Q.6-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#span-quiz-result21705070 &gt; strong.icon_question_incorrect_answer</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.redun &gt; b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='descbox_21705070']/div/section[3]/div[6]/span/span/span/b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=i</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='descbox_21705070']/div/section[3]/div[5]/span/i</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=printhov</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=downloadhov</td>
+	<td></td>
+</tr>
+<!--Author report-->
+<tr>
+	<td>open</td>
+	<td>http://www.proprofs.com/quiz-school/report.php?title=automation-scenario-case-1&amp;show=score-reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;User Score Report&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<!--Score-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_right &gt; div.right_rs</td>
+	<td>10 out of 30 ( 33% )</td>
+</tr>
+<!--Correct-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_even &gt; div.rs_main_left &gt; div.right_rs</td>
+	<td>2&nbsp;&nbsp;Questions</td>
+</tr>
+<!--Incorrect-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_even &gt; div.rs_main_right &gt; div.right_rs</td>
+	<td>2&nbsp;&nbsp;Questions</td>
+</tr>
+<!--Unanswered-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='left_wrapper_quiz']/div[13]/div[6]/div/div[2]</td>
+	<td>2&nbsp;&nbsp;Questions</td>
+</tr>
+<!--Q.1-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705064']/div/table/tbody/tr/td/span/strong</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705064']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>5 / 5</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.smallContent</td>
+	<td>(your answer)</td>
+</tr>
+<!--Q.2-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705065']/div/table/tbody/tr/td/span/strong</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storyDescbox21705065 &gt; div.top &gt; table.quzesionbg &gt; tbody &gt; tr &gt; td.quiz_title_link &gt; div &gt; span</td>
+	<td>Points earned:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705065']/div/table[2]/tbody/tr[2]/td[3]/span/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705065']/div/table[2]/tbody/tr[3]/td[3]/span/span/span</td>
+	<td>(missed)</td>
+</tr>
+<!--Q.3-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705066']/div/table/tbody/tr/td/span/strong</td>
+	<td>Correct</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705066']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>5 / 5</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705066']/div/table[2]/tbody/tr[2]/td[3]/span/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<!--Q.4-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#storyDescbox21705068 &gt; div.top &gt; table.quzesionbg &gt; tbody &gt; tr &gt; td.quiz_title_link &gt; span &gt; strong.icon_question_incorrect_answer</td>
+	<td>Incorrect</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#storyDescbox21705068 &gt; div.top &gt; table.quzesionbg &gt; tbody &gt; tr &gt; td.quiz_title_link &gt; div</td>
+	<td>Points earned: 0 / 5</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//label/span/span</td>
+	<td>(your answer)</td>
+</tr>
+<!--Q.5-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.note_icon</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705069']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 5</td>
+</tr>
+<!--Q.6-->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705070']/div/table/tbody/tr/td/span/strong</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705070']/div/table/tbody/tr/td[2]/div/span[2]</td>
+	<td>0 / 5</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.labelNormal.redun &gt; b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705070']/div/table[2]/tbody/tr[4]/td[6]/span/span/span/b</td>
+	<td>Missed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=i</td>
+	<td>Unanswered</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='storyDescbox21705070']/div/table[2]/tbody/tr[4]/td[5]/span/i</td>
+	<td>Unanswered</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.proprofs.com/" />
+<title>Shuffle Question QuizShowAll</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Shuffle Question QuizShowAll</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/quiz-school/story.php?title=NTY3NDI2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>rai</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>id=im</td>
+	<td>First Question</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#cb_span_2 &gt; #question-desc-align &gt; #im</td>
+	<td>Second question</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#cb_span_3 &gt; #question-desc-align &gt; #im</td>
+	<td>Third question</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#cb_span_4 &gt; #question-desc-align &gt; #im</td>
+	<td>Fourth question</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#cb_span_5 &gt; #question-desc-align &gt; #im</td>
+	<td>Fifth question</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#cb_span_6 &gt; #question-desc-align &gt; #im</td>
+	<td>Sixth Question</td>
+</tr>
+<!--captureEntirePageScreenshot   E:\\Quizshowall.png-->
+<tr>
+	<td>click</td>
+	<td>class=btn_class btn-big primary two</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit My Quiz']</td>
+	<td></td>
+</tr>
+<!--captureEntirePageScreenshot  E:\\Result.png-->
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Result »&nbsp;&nbsp;&nbsp;&nbsp;Fail</td>
+</tr>
+</tbody></table>
+</body>
+</html>

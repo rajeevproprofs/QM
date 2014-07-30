@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.proprofs.com/quiz-school/story.php?title=example-quiz-1-different-question-types" />
+<title>Selenium-13 manage page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Selenium-13 manage page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/quiz-school/user.php?login=rajeevqa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create a Quiz</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=scored_quiz</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=title_h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=quiztitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=quiztitle</td>
+	<td>Selenium-13 manage page</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submit_survey_desc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='edit_Ques_Multi_Choice();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='edit_Ques_Multi();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='true_false();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='edit_Ques_fill();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='edit_Ques_Essay();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='edit_Ques_matching();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--Verify drag and Drop-->
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=img[title=&quot;Use to drag&quot;]</td>
+	<td>css=#radio_questype2 &gt; div.border_visible &gt; div.icon &gt; div.drag_icon &gt; img[title=&quot;Use to drag&quot;]</td>
+</tr>
+<!--End-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=getresponse4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=close-preview</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=Selenium-13 manage page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usrname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usrname</td>
+	<td>Rajeev</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Rai</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Start']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.m_crtxtr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.m_crtxtr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fillin</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.m_crtxtr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=essay</td>
+	<td>TEst</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@class='m_show_match_r']/select</td>
+	<td>label=Match 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_page2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Result »&nbsp;&nbsp;&nbsp;&nbsp;Fail</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=m_quiz-end-msg</td>
+	<td>Hope you enjoyed the quiz! Your score report is presented below.</td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=save_check</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reports &amp; Attempts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;User Score Report&quot;] &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.right_rs</td>
+	<td>Fail</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Bonus Points</td>
+	<td>Bonus Points</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_right &gt; div.right_rs</td>
+	<td>50 out of 100 ( 50% )</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Grade</td>
+	<td>Grade</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Grade</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=points</td>
+	<td>16</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=save_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Bonus Points</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=bonuspoint</td>
+	<td>label=16</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=bonuspoint</td>
+	<td>label=16</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update_bpoints();']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Close this window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rs_main_right &gt; div.right_rs</td>
+	<td>82 out of 100 ( 82% )</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.right_rs</td>
+	<td>Pass</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Quizzes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/strong</td>
+	<td>Selenium-13 manage page</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
